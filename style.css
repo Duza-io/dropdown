@@ -1,0 +1,87 @@
+html {
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #fafafa;
+  font-family: "Dongle";
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav {
+  background: purple;
+}
+
+nav ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  padding: 15px 14px;
+  transition: 0.3s linear;
+}
+
+nav ul li:hover {
+  background: plum;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  width: 250px;
+}
+
+nav ul li ul li {
+  border-top: 2px solid pink;
+  display: block;
+}
+
+nav ul li ul li:first-child {
+  border-top: none;
+}
+
+nav ul li ul li a {
+  background: purple;
+  display: block;
+  padding: 10px 14px;
+}
+
+nav ul li ul li a:hover {
+  background: plum;
+}
+
+nav .fa.fa-angle-down {
+  margin-left: 6px;
+}
